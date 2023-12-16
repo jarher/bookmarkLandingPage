@@ -11,12 +11,16 @@
   font-family: "Rubik";
   src: url("../../fonts/Rubik-Regular.ttf");
 }
-
-
+*{
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
   font-family: "Rubik";
   font-size: 18px;
+}
+body{
+  margin: 0;
 }
 .container {
   margin: 0;
