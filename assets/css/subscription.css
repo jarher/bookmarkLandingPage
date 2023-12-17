@@ -33,9 +33,10 @@
   outline: none;
   color:var(--Very-Dark-Blue);
   font-weight: 500;
+  transition: all 0.2s ease-in-out;
 }
 .subscription form input:invalid {
-  outline: 2px solid var(--Soft-red);
+  outline: 2px solid var(--Soft-Red);
 }
 .input-error {
   background-color: var(--Soft-Red);

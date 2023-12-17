@@ -1,13 +1,27 @@
 import { toggleAccordion } from "./accordion.js";
+import { isValid } from "./formValidator.js";
 import { loadIcons } from "./load.js";
 import { closeMenu, openMenu } from "./menu.js";
 import { panel_active } from "./tabs.js";
 
 export function event() {
-  document.addEventListener("DOMContentLoaded", loadIcons);
+  const d = document;
 
-  document.addEventListener("click", (e) => {
-   
+  function formValidation({ isAdd, isDisabled }) {
+    const errorMessage = d.querySelector(".input-error");
+    const button = d.querySelector("form button");
+    if (isAdd) {
+      errorMessage.classList.add("hidden");
+      button.disabled = isDisabled;
+    } else {
+      errorMessage.classList.remove("hidden");
+      button.disabled = isDisabled;
+    }
+  }
+
+  d.addEventListener("DOMContentLoaded", loadIcons);
+
+  d.addEventListener("click", (e) => {
     if (e.target.className === "menu-icon") {
       openMenu();
     }
@@ -18,5 +32,13 @@ export function event() {
       panel_active(Number.parseInt(e.target.dataset.index));
     }
     toggleAccordion(e.target);
+  });
+
+  d.addEventListener("keyup", (e) => {
+    !isValid(e.target)
+      ? formValidation({ isAdd: false, isDisabled: true })
+      : formValidation({ isAdd: true, isDisabled: false });
+    if (e.target.value === "")
+      formValidation({ isAdd: true, isDisabled: true });
   });
 }
