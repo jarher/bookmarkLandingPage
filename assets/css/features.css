@@ -63,7 +63,7 @@
 .tab-panel-title {
   font-size: 1.4rem;
   color: var(--Very-Dark-Blue);
-  font-weight: 500;
+  font-weight: bold;
 }
 .tab-panel-description p {
   color: var(--Grayish-Blue);
