@@ -201,7 +201,11 @@
       <span>35,000+ already joined</span>
       <span class="subscription-title">Stay up-to-date with what we’re doing</span>
       <form name="emailForm">
-        <input type="email" name="email" id="email">
+        <img src="./images/icon-error.svg" alt="icon error" class="input-error-icon">
+        <input type="email" name="email" id="email" placeholder="Enter your email address">
+        <div class="input-error hidden">
+          Whoops, make sure it's an email
+        </div>
         <button type="submit">Contact Us</button>
       </form>
     </section>
