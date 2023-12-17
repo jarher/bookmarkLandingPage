@@ -1,24 +1,35 @@
-footer{
-
+footer {
+  background-color: var(--Very-Dark-Blue);
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
-footer .bookmark-logo{
-
+footer .bookmark-logo {
+}
+.footer-menu,
+.social-media {
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+.footer-menu li,
+.social-media li {
+  list-style: none;
 }
 .footer-menu{
-
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
 }
-.footer-menu li{
-
+.footer-menu li a {
+  color: white;
+  letter-spacing: 0.2rem;
 }
-.footer-menu li a{
-
-}
-.social-media{
-
-}
-.social-media li{
-
-}
-.social-media li a{
-
+.social-media {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
 }
