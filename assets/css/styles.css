@@ -37,3 +37,6 @@ a {
 .hidden{
   display: none;
 }
+.fade-in{
+  opacity: 1;
+}
