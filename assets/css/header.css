@@ -113,18 +113,18 @@ header .bookmark-logo {
     padding: 0;
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
   }
   .main-menu-wrapper .login-button {
     background-color: var(--Soft-Red);
     color: white;
-    padding: 10px 0;
-    width: 150px;
     border: none;
-    display: block;
-    font-size: 1rem;
     border-radius: 5px;
     margin-top: 0;
+    height: 30px;
+    line-height: 30px;
+    width: 100px;
+    font-size: 0.7rem;
   }
   .main-menu-header {
     display: none;
@@ -135,7 +135,7 @@ header .bookmark-logo {
   .main-menu menu {
     flex-direction: row;
     border: none;
-    gap: 50px;
+    gap: 30px;
   }
   .main-menu menu li {
     border: none;
@@ -143,7 +143,7 @@ header .bookmark-logo {
   }
   .main-menu menu li a {
     color: var(--Very-Dark-Blue);
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   .main-menu-wrapper .social-media {
     display: none;
