@@ -1,5 +1,5 @@
 import { toggleAccordion } from "./accordion.js";
-import { isValid } from "./formValidator.js";
+import { formValidation, isValid } from "./formValidator.js";
 import { loadIcons } from "./load.js";
 import { closeMenu, displayMenu, openMenu } from "./menu.js";
 import { panel_active } from "./tabs.js";
@@ -7,24 +7,13 @@ import { panel_active } from "./tabs.js";
 export function event() {
   const d = document;
 
-  function formValidation({ isAdd, isDisabled }) {
-    const errorMessage = d.querySelector(".input-error");
-    const button = d.querySelector("form button");
-    if (isAdd) {
-      errorMessage.classList.add("hidden");
-      button.disabled = isDisabled;
-    } else {
-      errorMessage.classList.remove("hidden");
-      button.disabled = isDisabled;
-    }
-  }
-
   d.addEventListener("DOMContentLoaded", e => {
     loadIcons();
     displayMenu();
   });
 
   d.addEventListener("click", (e) => {
+    e.preventDefault();
     if (e.target.className === "menu-icon") {
       openMenu();
     }

@@ -26,12 +26,26 @@ footer .bookmark-logo {
 .footer-menu li a {
   color: white;
   letter-spacing: 0.2rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.footer-menu li a:hover {
+  color: var(--Soft-Red);
 }
 .social-media {
   display: flex;
   flex-direction: row;
   gap: 30px;
   justify-content: center;
+}
+.social-media li a {
+  cursor: pointer;
+}
+.social-media li a .icon svg path {
+  transition: all 0.2s ease-in-out;
+}
+.social-media li a .icon svg path:hover {
+  fill: var(--Soft-Red);
 }
 @media (min-width: 768px) {
   footer {
@@ -43,5 +57,26 @@ footer .bookmark-logo {
   }
   .footer-menu li a {
     font-size: 0.8rem;
+  }
+}
+@media (min-width: 1024px) {
+  footer {
+    padding: 2% 10%;
+    flex-direction: row;
+    gap: 50px;
+  }
+  footer .bookmark-logo {
+    display: flex;
+  }
+  .footer-menu {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+    margin: 0;
+  }
+  .social-media {
+    gap: 30px;
+    justify-content: flex-end;
+    align-items: center;
   }
 }
