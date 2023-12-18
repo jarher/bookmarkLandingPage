@@ -61,6 +61,12 @@
   border: none;
   margin-top: 4%;
   font-weight: 600;
+  transition: all 0.2s ease-in-out;
+}
+.subscription form button:hover {
+  background-color: white;
+  color: var(--Soft-Red);
+  outline: 1px solid var(--Soft-Red);
 }
 @media (min-width: 768px) {
   .subscription {
@@ -69,5 +75,45 @@
   }
   .subscription form {
     width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .subscription {
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .subscription span:nth-child(1) {
+    font-size: 0.9rem;
+  }
+  .subscription-title {
+    font-size: 2rem;
+    color: white;
+    font-weight: 500;
+    margin: 3% auto;
+    width: 40%;
+  }
+  .subscription form {
+    width: 40%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .subscription form input {
+    flex: 2;
+  }
+  .subscription form button {
+    font-size: 0.9rem;
+    margin-top: 0;
+  }
+  .input-error {
+    width: 360px;
+    order: 3;
+    margin-top: -21px;
+    padding: 2%;
+    font-size: 0.8rem;
+  }
+  .input-error-icon {
+    right: 145px;
   }
 }
