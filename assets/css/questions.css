@@ -105,3 +105,34 @@
     margin-top: 3%;
   }
 }
+@media (min-width: 1024px) {
+  .questions {
+    margin: 8% 0;
+  }
+  .questions h4 {
+    font-size: 1.5rem;
+  }
+  .questions p {
+    width: 44%;
+    line-height: 1.7rem;
+    margin: auto;
+  }
+  .questions-dropdown-wrapper {
+    width: 44%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .questions-dropdown-heading span:nth-child(1) {
+    font-size: 0.95rem;
+  }
+  .dropdown-description {
+    font-size: 0.95rem;
+  }
+  .questions-button {
+    padding: 1%;
+    width: 10%;
+  }
+  .moveDown {
+    margin-top: 7%;
+  }
+}
