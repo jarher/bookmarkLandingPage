@@ -146,44 +146,4 @@
     font-size: 1.2rem;
     line-height: 1.7rem;
   }
-
-  /* .tab-panels-wrapper {
-  }
-  .tab-panel {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: -90px;
-    gap: 50px;
-  }
-  .tab-panel-image-wrapper {
-    flex: 1;
-  }
-  .tab-panel-image-wrapper img {
-    margin-top: 0;
-    margin-left: 10%;
-    width: 85%;
-  }
-  .tab-panel-description {
-    margin-right: 10%;
-    text-align: left;
-    flex: 1;
-  }
-  .tab-panel-title {
-    font-size: 1.7rem;
-  }
-  .tab-panel-description p {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  .tab-link-button {
-    background-color: var(--Soft-Blue);
-    color: white;
-    display: block;
-    padding: 2%;
-    width: 15%;
-    font-size: 0.7rem;
-    text-align: center;
-    border-radius: 3px;
-  } */
 }
