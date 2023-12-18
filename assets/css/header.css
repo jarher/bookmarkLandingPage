@@ -88,9 +88,7 @@ header .bookmark-logo {
 }
 .menu-icon {
 }
-.login-button {
-  display: none;
-}
+
 @media (min-width: 768px) {
   header {
     padding-top: 5%;
@@ -98,5 +96,59 @@ header .bookmark-logo {
   }
   .main-menu-header {
     height: 65px;
+  }
+}
+@media (min-width: 1024px) {
+  header {
+    padding: 5% 10%;
+    height: 50px;
+  }
+  header .bookmark-logo {
+    width: 180px;
+  }
+  .main-menu-wrapper {
+    position: relative;
+    background-color: transparent;
+    opacity: 1;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+  .main-menu-wrapper .login-button {
+    background-color: var(--Soft-Red);
+    color: white;
+    padding: 10px 0;
+    width: 150px;
+    border: none;
+    display: block;
+    font-size: 1rem;
+    border-radius: 5px;
+    margin-top: 0;
+  }
+  .main-menu-header {
+    display: none;
+  }
+  .main-menu {
+    margin-top: 0;
+  }
+  .main-menu menu {
+    flex-direction: row;
+    border: none;
+    gap: 50px;
+  }
+  .main-menu menu li {
+    border: none;
+    padding: 0;
+  }
+  .main-menu menu li a {
+    color: var(--Very-Dark-Blue);
+    font-size: 1rem;
+  }
+  .main-menu-wrapper .social-media {
+    display: none;
+  }
+  .header-buttons-wrapper {
+    display: none;
   }
 }

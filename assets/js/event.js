@@ -1,7 +1,7 @@
 import { toggleAccordion } from "./accordion.js";
 import { isValid } from "./formValidator.js";
 import { loadIcons } from "./load.js";
-import { closeMenu, openMenu } from "./menu.js";
+import { closeMenu, displayMenu, openMenu } from "./menu.js";
 import { panel_active } from "./tabs.js";
 
 export function event() {
@@ -19,7 +19,10 @@ export function event() {
     }
   }
 
-  d.addEventListener("DOMContentLoaded", loadIcons);
+  d.addEventListener("DOMContentLoaded", e => {
+    loadIcons();
+    displayMenu();
+  });
 
   d.addEventListener("click", (e) => {
     if (e.target.className === "menu-icon") {
@@ -41,4 +44,7 @@ export function event() {
     if (e.target.value === "")
       formValidation({ isAdd: true, isDisabled: true });
   });
+
+  d.addEventListener("resize", displayMenu);
+
 }

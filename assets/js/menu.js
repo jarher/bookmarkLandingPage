@@ -13,3 +13,9 @@ export function closeMenu() {
     menuWrapper.classList.toggle("hidden");
   }, 200);
 }
+
+export function displayMenu() {
+  window.matchMedia("(min-width: 1024px)").matches
+    ? menuWrapper.classList.remove("hidden")
+    : menuWrapper.classList.add("hidden");
+}
