@@ -6,7 +6,7 @@
   color: var(--Very-Dark-Blue);
   font-size: 1.2rem;
 }
-.features p {
+.features-mainText {
   font-size: 0.835rem;
   line-height: 1.4rem;
   color: var(--Grayish-Blue);
@@ -14,8 +14,6 @@
 }
 .features-tabs-wrapper {
   margin: 10% 0;
-}
-.tabs-buttons-wrapper {
 }
 .tab-button {
   text-align: center;
@@ -57,8 +55,6 @@
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-.tab-panel-image-wrapper {
-}
 .tab-panel-description {
   margin-top: 30px;
 }
@@ -76,7 +72,7 @@
   display: none;
 }
 @media (min-width: 768px) {
-  .features p {
+  .features-mainText {
     font-size: 1rem;
     padding: 0;
   }
@@ -90,4 +86,104 @@
     width: 60%;
     margin: auto;
   }
+}
+@media (min-width: 1024px) {
+  .features {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .features h2 {
+    font-size: 1.5rem;
+  }
+  .features-mainText {
+    width: 44%;
+    margin: auto;
+    line-height: 1.7rem;
+  }
+  .features-tabs-wrapper {
+    margin: 3% 0;
+  }
+  .tabs-buttons-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+  }
+  .tab-button {
+    flex: 1;
+    border-top: none;
+    border-bottom: 1px solid hsla(229, 8%, 60%, 0.274);
+  }
+  .tab-button span:nth-child(1) {
+    font-size: 1rem;
+  }
+  .tab-button span:nth-child(2) {
+    width: 100%;
+  }
+  .tab-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 200px;
+  }
+  .tab-panel-image-wrapper,
+  .tab-panel-description {
+    flex: 1;
+  }
+  .tab-panel-image-wrapper img {
+    width: 90%;
+    margin-left: 25%;
+  }
+  .tab-panel-description {
+    text-align: left;
+    margin-right: 10%;
+  }
+  .tab-panel-title {
+    font-size: 2rem;
+  }
+  .tab-panel-description p {
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+
+  /* .tab-panels-wrapper {
+  }
+  .tab-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: -90px;
+    gap: 50px;
+  }
+  .tab-panel-image-wrapper {
+    flex: 1;
+  }
+  .tab-panel-image-wrapper img {
+    margin-top: 0;
+    margin-left: 10%;
+    width: 85%;
+  }
+  .tab-panel-description {
+    margin-right: 10%;
+    text-align: left;
+    flex: 1;
+  }
+  .tab-panel-title {
+    font-size: 1.7rem;
+  }
+  .tab-panel-description p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .tab-link-button {
+    background-color: var(--Soft-Blue);
+    color: white;
+    display: block;
+    padding: 2%;
+    width: 15%;
+    font-size: 0.7rem;
+    text-align: center;
+    border-radius: 3px;
+  } */
 }
