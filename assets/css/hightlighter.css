@@ -36,6 +36,19 @@
 }
 .hightlighter-links-wrapper a:nth-child(2) {
   background-color: hsla(229, 8%, 60%, 0.089);
-  color: var(--Very-Dark-Blue); 
+  color: var(--Very-Dark-Blue);
   box-shadow: 0 7px 10px hsla(229, 8%, 60%, 0.246);
+}
+@media (min-width: 768px) {
+  .highlighter {
+    margin: 0%;
+  }
+  .highlitghter-description p {
+    font-size: 1rem;
+  }
+  .hightlighter-links-wrapper a {
+    padding: 2%;
+    font-size: 1rem;
+    width: 45%;
+  }
 }

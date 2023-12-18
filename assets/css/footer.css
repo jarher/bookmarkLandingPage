@@ -18,10 +18,10 @@ footer .bookmark-logo {
 .social-media li {
   list-style: none;
 }
-.footer-menu{
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 .footer-menu li a {
   color: white;
@@ -32,4 +32,16 @@ footer .bookmark-logo {
   flex-direction: row;
   gap: 30px;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  footer {
+    padding: 5%;
+    gap: 20px;
+  }
+  .footer-menu {
+    gap: 14px;
+  }
+  .footer-menu li a {
+    font-size: 0.8rem;
+  }
 }

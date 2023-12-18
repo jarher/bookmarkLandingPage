@@ -91,3 +91,12 @@ header .bookmark-logo {
 .login-button {
   display: none;
 }
+@media (min-width: 768px) {
+  header {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .main-menu-header {
+    height: 65px;
+  }
+}

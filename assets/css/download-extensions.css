@@ -41,8 +41,8 @@
   font-size: 0.8rem;
 }
 .dots {
-    display: block;
-    margin: 10% 0 7%;
+  display: block;
+  margin: 10% 0 7%;
 }
 .card-button {
   display: block;
@@ -53,4 +53,23 @@
   padding: 5% 0;
   border-radius: 4px;
   font-size: 0.8rem;
+}
+@media (min-width: 768px) {
+  .download-extensions > p {
+    font-size: 1rem;
+  }
+  .download-extensions-cards {
+    margin-top: 8%;
+  }
+  .extension-card {
+    padding-top: 8%;
+    width: 50%;
+  }
+  .extension-card-logo {
+    width: 20%;
+  }
+  .card-button {
+    width: 65%;
+    padding: 3% 0;
+  }
 }

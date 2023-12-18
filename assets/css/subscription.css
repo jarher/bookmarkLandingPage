@@ -31,7 +31,7 @@
 .subscription form input {
   border: none;
   outline: none;
-  color:var(--Very-Dark-Blue);
+  color: var(--Very-Dark-Blue);
   font-weight: 500;
   transition: all 0.2s ease-in-out;
 }
@@ -61,4 +61,13 @@
   border: none;
   margin-top: 4%;
   font-weight: 600;
+}
+@media (min-width: 768px) {
+  .subscription {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .subscription form {
+    width: 60%;
+  }
 }

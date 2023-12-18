@@ -79,3 +79,29 @@
 .rotate-arrow svg path {
   stroke: var(--Soft-Red);
 }
+@media (min-width: 768px) {
+  .questions {
+    margin: 15% 7%;
+  }
+  .questions p {
+    font-size: 1rem;
+  }
+  .questions-dropdown-wrapper {
+    margin: 5% 0;
+  }
+  .questions-dropdown-heading span:nth-child(1) {
+    font-size: 0.85rem;
+  }
+  .dropdown-description {
+    font-size: 0.9rem;
+    padding: 5% 0;
+  }
+  .questions-button {
+    padding: 2%;
+    font-size: 0.9rem;
+    width: 25%;
+  }
+  .moveDown {
+    margin-top: 3%;
+  }
+}

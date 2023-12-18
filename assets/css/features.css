@@ -73,5 +73,21 @@
   font-weight: 500;
 }
 .tab-link-button {
-    display: none
+  display: none;
+}
+@media (min-width: 768px) {
+  .features p {
+    font-size: 1rem;
+    padding: 0;
+  }
+  .tab-button {
+    padding-top: 3%;
+  }
+  .tab-button span:nth-child(2) {
+    width: 20%;
+  }
+  .tab-panel-image-wrapper {
+    width: 60%;
+    margin: auto;
+  }
 }
