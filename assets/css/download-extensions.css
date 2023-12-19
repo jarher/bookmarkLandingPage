@@ -53,6 +53,12 @@
   padding: 5% 0;
   border-radius: 4px;
   font-size: 0.8rem;
+  transition: all 0.2s ease-in-out;
+}
+.card-button:hover {
+  color: var(--Soft-Blue);
+  outline: 1px solid var(--Soft-Blue);
+  background-color: transparent;
 }
 @media (min-width: 768px) {
   .download-extensions > p {
@@ -88,7 +94,7 @@
   }
   .download-extensions-cards {
     flex-direction: row;
-    height: 45vh;
+    height: 50vh;
     margin-top: 5%;
   }
   .extension-card {

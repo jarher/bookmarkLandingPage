@@ -30,6 +30,10 @@
   color: var(--Grayish-Blue);
   font-size: 0.9rem;
   font-weight: 500;
+  transition: all 0.2s ease-in-out;
+}
+.tab-button span:nth-child(1):hover {
+  color: var(--Soft-Red);
 }
 .tab-button span:nth-child(2) {
   height: 3px;

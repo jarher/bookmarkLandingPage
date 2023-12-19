@@ -61,18 +61,21 @@ header .bookmark-logo {
   color: white;
   letter-spacing: 0.2rem;
   font-size: 0.8rem;
+  transition: all 0.2s ease;
 }
 .main-menu-wrapper .login-button {
   display: block;
   border: 1px solid white;
   border-radius: 3px;
   color: white;
+  cursor: pointer;
   background-color: transparent;
   width: 100%;
   font-size: 0.8rem;
   letter-spacing: 0.1rem;
   margin-top: 7%;
   height: 50px;
+  transition: all 0.2s ease-in-out;
 }
 .main-menu-wrapper .social-media {
   align-self: flex-end;
@@ -122,6 +125,11 @@ header .bookmark-logo {
     width: 100px;
     font-size: 0.7rem;
   }
+  .main-menu-wrapper .login-button:hover {
+    outline: 1px solid var(--Soft-Red);
+    background-color: transparent;
+    color: var(--Soft-Red);
+  }
   .main-menu-header {
     display: none;
   }
@@ -140,6 +148,9 @@ header .bookmark-logo {
   .main-menu menu li a {
     color: var(--Very-Dark-Blue);
     font-size: 0.7rem;
+  }
+  .main-menu menu li a:hover {
+    color: var(--Soft-Red);
   }
   .main-menu-wrapper .social-media {
     display: none;

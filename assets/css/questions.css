@@ -39,6 +39,10 @@
   font-size: 0.75rem;
   color: var(--Very-Dark-Blue);
   font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+.questions-dropdown-heading:hover span:nth-child(1) {
+  color: var(--Soft-Red);
 }
 .questions-dropdown-heading .icon {
   display: block;
@@ -136,4 +140,3 @@
     margin-top: 7%;
   }
 }
-
