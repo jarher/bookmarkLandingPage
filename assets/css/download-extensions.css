@@ -25,6 +25,10 @@
   border-radius: 5px 5px 10px 10px;
   width: 85%;
   margin: auto;
+  transition: all 0.2s ease-in-out;
+}
+.extension-card:hover{
+  transform: scale(1.1);
 }
 .extension-card-logo {
   width: 30%;
@@ -105,11 +109,14 @@
   }
   .extension-card:nth-of-type(1) {
     align-self: flex-start;
+    order: 1;
   }
   .extension-card:nth-of-type(2) {
     align-self: center;
+    order: 2;
   }
   .extension-card:nth-of-type(3) {
     align-self: flex-end;
+    order: 3;
   }
 }
