@@ -1,21 +1,27 @@
-const menuWrapper = document.querySelector(".main-menu-wrapper");
+import { addClass, getElement, removeClass, toggleClass } from "./utils.js";
+
+const menuWrapper = getElement(".main-menu-wrapper");
+
+function timeout(){
+
+}
 
 export function openMenu() {
-  menuWrapper.classList.toggle("hidden");
+  toggleClass(menuWrapper, "hidden");
   setTimeout(() => {
-    menuWrapper.classList.toggle("fade-in");
+    toggleClass(menuWrapper, "fade-in");
   }, 200);
 }
 
 export function closeMenu() {
-  menuWrapper.classList.toggle("fade-in");
+  toggleClass(menuWrapper, "fade-in");
   setTimeout(() => {
-    menuWrapper.classList.toggle("hidden");
+    toggleClass(menuWrapper, "hidden");
   }, 200);
 }
 
 export function displayMenu() {
   window.matchMedia("(min-width: 1024px)").matches
-    ? menuWrapper.classList.remove("hidden")
-    : menuWrapper.classList.add("hidden");
+    ? removeClass(menuWrapper, "hidden")
+    : addClass(menuWrapper, "hidden");
 }

@@ -7,13 +7,14 @@ import { panel_active } from "./tabs.js";
 export function event() {
   const d = document;
 
-  d.addEventListener("DOMContentLoaded", e => {
+  d.addEventListener("DOMContentLoaded", (e) => {
     loadIcons();
     displayMenu();
   });
 
   d.addEventListener("click", (e) => {
     e.preventDefault();
+    
     if (e.target.className === "menu-icon") {
       openMenu();
     }
@@ -34,6 +35,5 @@ export function event() {
       formValidation({ isAdd: true, isDisabled: true });
   });
 
-  d.addEventListener("resize", displayMenu);
-
+  window.addEventListener("resize",displayMenu);
 }

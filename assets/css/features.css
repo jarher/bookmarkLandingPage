@@ -24,6 +24,7 @@
   justify-content: space-between;
   padding-top: 5%;
   border-top: 1px solid hsla(229, 8%, 60%, 0.274);
+  cursor: pointer;
 }
 .tab-button span:nth-child(1) {
   color: var(--Grayish-Blue);

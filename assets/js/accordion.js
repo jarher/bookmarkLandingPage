@@ -1,14 +1,22 @@
-const dropdownItem = Array.from(
-  document.querySelectorAll(".dropdown-description")
-);
+import { getElements, removeClass, toggleClass } from "./utils.js";
+
+const dropdownItem = Array.from(getElements(".dropdown-description"));
+const arrowIcons = Array.from(getElements(".arrow-icon"));
 
 function changeClass(id) {
   dropdownItem.forEach((item) => {
-    Number.parseInt(item.dataset.id) === id
-      ? item.classList.toggle("moveDown")
-      : item.classList.remove("moveDown");
+    if (Number.parseInt(item.dataset.id) === id) {
+      toggleClass(item, "moveDown");
+      toggleClass(arrowIcons[id], "rotate-arrow");
+      return;
+    }
+    removeClass(item, "moveDown");
   });
-  document.querySelectorAll(".arrow-icon")[id].classList.toggle("rotate-arrow");
+  arrowIcons.forEach((item, i) => {
+    if (i !== id) {
+      removeClass(item, "rotate-arrow");
+    }
+  });
 }
 export function toggleAccordion(target) {
   if (target.className === "questions-dropdown-heading") {
@@ -17,5 +25,4 @@ export function toggleAccordion(target) {
   if (target.classList.contains("arrow-icon")) {
     changeClass(Number.parseInt(target.parentElement.dataset.id));
   }
-  
 }
