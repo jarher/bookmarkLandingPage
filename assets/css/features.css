@@ -158,6 +158,16 @@
     font-size: 1.2rem;
     line-height: 1.7rem;
   }
+  .tab-link-button {
+    display: block;
+    background-color: var(--Soft-Blue);
+    color: white;
+    width: 19%;
+    padding: 3%;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+  }
 }
 @media (max-width: 320px) {
   .tab-panel-image-wrapper .img-shadow {
@@ -176,7 +186,7 @@
   }
 }
 @media (min-width: 376px) and (max-width: 425px) {
-   .tab-panel-image-wrapper .img-shadow {
+  .tab-panel-image-wrapper .img-shadow {
     left: -31px;
     top: 40px;
     height: 42vh;
