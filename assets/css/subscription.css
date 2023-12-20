@@ -108,10 +108,14 @@
   .subscription-input-wrapper{
     flex:2;
   }
+  .subscription form input{
+    padding: 16px;
+  }
   .subscription form button {
     align-self: baseline;
     font-size: 0.9rem;
     margin-top: 0;
+    padding: 14px;
   }
   .input-error {
     padding: 2% 5%;

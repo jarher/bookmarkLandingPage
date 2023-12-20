@@ -5,6 +5,13 @@
 .illustration-hero-container {
   position: relative;
 }
+.img-shadow {
+  position: absolute;
+  z-index: -1;
+  background-color: var(--Soft-Blue);
+  border-bottom-left-radius: 50%;
+}
+
 .highlitghter-description h1 {
   text-align: center;
   color: var(--Very-Dark-Blue);
@@ -74,7 +81,7 @@
     order: 2;
     flex: 1;
   }
-  .illustration-hero-container img {
+  .illustration-hero-container img:nth-of-type(1) {
     width: 95%;
     margin-left: -3%;
   }
@@ -108,5 +115,53 @@
     padding: 2%;
     width: 22%;
     font-size: 0.7rem;
+  }
+}
+@media (max-width: 320px) {
+  .img-shadow {
+    top: 43px;
+    right: -35px;
+    width: 83vw;
+    height: 29vh;
+  }
+}
+@media (min-width: 321px) and (max-width: 375px) {
+  .img-shadow {
+    top: 51px;
+    right: -26px;
+    width: 75vw;
+    height: 35vh;
+  }
+}
+@media (min-width: 376px) and (max-width: 425px) {
+  .img-shadow {
+    top: 59px;
+    right: -26px;
+    width: 79vw;
+    height: 37vh;
+  }
+}
+@media (min-width: 426px) and (max-width: 768px) {
+  .img-shadow {
+    top: 105px;
+    right: -48px;
+    width: 78vw;
+    height: 41vh;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .img-shadow {
+    top: 93px;
+    right: 1px;
+    width: 37vw;
+    height: 22vh;
+  }
+}
+@media (min-width: 1025px) {
+  .img-shadow {
+    top: 131px;
+    right: -1px;
+    width: 35vw;
+    height: 35vh;
   }
 }

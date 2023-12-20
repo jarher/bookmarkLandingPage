@@ -22,7 +22,7 @@ footer {
   gap: 25px;
 }
 .footer-menu li a {
-  color: white;
+  color: #d7d7d7;
   letter-spacing: 0.2rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
@@ -65,6 +65,8 @@ footer {
   }
   footer .bookmark-logo {
     display: flex;
+    transform: scale(0.7);
+    margin-top: 5px;
   }
   .footer-menu {
     flex-direction: row;
@@ -72,9 +74,19 @@ footer {
     gap: 50px;
     margin: 0;
   }
+  .footer-menu li a {
+    font-size: 0.5rem;
+  }
   .social-media {
     gap: 30px;
     justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+  }
+  .social-media li{
+    width: 20px;
+    height: 20px;
+    display: flex;
     align-items: center;
   }
 }
